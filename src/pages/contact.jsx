@@ -1,8 +1,18 @@
-import React from "react";
+import React, {useState , useEffect} from "react";
 import { Navbar , Footer } from '../components'
 import '../styles/contact.scss'
 
 const Contact = () => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(name)
+    }
+
   return (
     <>
         <Navbar  color="bg-white" textColor="orange" btnStyles='bg-orange p-4 text-white'/>
@@ -52,7 +62,8 @@ const Contact = () => {
                 </div>
                 <div class="grow-0 shrink-0 basis-auto w-full md:w-4/12 px-3 lg:px-6">
                     <p class="font-bold mb-6">Didn't find your answer in the FAQ? Contact our sales</p>
-                    <form>
+                    <form onSubmit={handleSubmit}>
+                        {name}
                     <div class="form-group mb-6">
                         <input type="text" class="form-control block
                         w-full
@@ -60,14 +71,17 @@ const Contact = () => {
                         py-1.5
                         text-base
                         font-normal
-                        text-grey
+                        text-sfblue
                         bg-white bg-clip-padding
                         border border-solid border-gray-300
                         rounded
                         transition
                         ease-in-out
                         m-0
-                        focus:text-grey focus:bg-white focus:border-sfblue focus:outline-none" id="exampleInput7"
+                        focus:text-black focus:bg-white focus:border-sfblue focus:outline-none" id="exampleInput7"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        autoFocus={true}
                         placeholder="Name"/>
                     </div>
                     <div class="form-group mb-6">
@@ -77,14 +91,14 @@ const Contact = () => {
                         py-1.5
                         text-base
                         font-normal
-                        text-grey
+                        text-sfblue
                         bg-white bg-clip-padding
                         border border-solid border-gray-300
                         rounded
                         transition
                         ease-in-out
                         m-0
-                        focus:text-grey focus:bg-white focus:border-sfblue focus:outline-none" id="exampleInput8"
+                        focus:text-black focus:bg-white focus:border-sfblue focus:outline-none" id="exampleInput8"
                         placeholder="Email address"/>
                     </div>
                     <div class="form-group mb-6">
@@ -96,20 +110,22 @@ const Contact = () => {
                         py-1.5
                         text-base
                         font-normal
-                        text-grey
+                       
                         bg-white bg-clip-padding
                         border border-solid border-gray-300
                         rounded
                         transition
                         ease-in-out
                         m-0
-                        focus:text-grey focus:bg-white focus:border-sfblue focus:outline-none
+                        focus:text-black focus:bg-white focus:border-sfblue focus:outline-none
                         " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
                     </div>
                     <div class="form-group form-check text-center mb-6">
                         <input type="checkbox"
-                        class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                        id="exampleCheck87" checked/>
+                        class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-sfblue checked:border-orange focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+                        id="exampleCheck87"
+                        defaultChecked={true}
+                        />
                         <label class="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a copy of this
                         message</label>
                     </div>
