@@ -1,6 +1,6 @@
 import React from 'react'
 import { Router , Route, Routes  } from 'react-router-dom'
-import { Home , About , Contact , Careers , Tracking , Notfound , Services } from './pages'
+import { Home , About , Contact , Careers , Tracking , Notfound , Services , Position } from './pages'
 import NotFound from './pages/404'
 
 
@@ -15,6 +15,7 @@ const App = () => {
         <Route path="/services" element={<Services/>} ></Route>
         <Route path="/careers" element={<Careers/>} ></Route>
         <Route path="/Tracking" element={<Tracking/>} ></Route>
+        <Route path="/careers/position" element={<Position/>} ></Route>
         <Route path="*" element={<Notfound/>} ></Route>
       </Routes>
     </>

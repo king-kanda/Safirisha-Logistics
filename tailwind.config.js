@@ -14,6 +14,7 @@ export default {
       'midblack' : '#424242' ,
       'bggray' : '#f1f1f1',
       'black' : '#000000',
+      'transparent' : 'transparent',
 
     },
     container: {

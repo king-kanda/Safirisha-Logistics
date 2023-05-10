@@ -57,9 +57,11 @@ const Careers = () => {
                                         </span>
                                       
                                         <div className={`${styles.positionTt} my-3 flex items-center justify-between`}>
-                                            <h3 className={`${styles.positionTitle}`}>
-                                                Senior Software Engineer
-                                            </h3>
+                                            <Link to='/careers/position'>
+                                                <h3 className={`${styles.positionTitle}`}>
+                                                    Senior Software Engineer
+                                                </h3>
+                                            </Link>
                                             <button className="bg-blue-500 hover:bg-blue-700 text-sfteal font-bold py-2 px-4 rounded">
                                                 Apply Now
                                             </button>
@@ -80,9 +82,11 @@ const Careers = () => {
                                         </span>
                                       
                                         <div className={`${styles.positionTt} my-3 flex items-center justify-between`}>
-                                            <h3 className={`${styles.positionTitle}`}>
-                                               DevOp Engineer
-                                            </h3>
+                                            <Link to='/careers/position'>
+                                                <h3 className={`${styles.positionTitle}`}>
+                                                   DevOps Engineer
+                                                </h3>
+                                            </Link>
                                             <button className="bg-blue-500 hover:bg-blue-700 text-sfteal font-bold py-2 px-4 rounded">
                                                 Apply Now
                                             </button>
