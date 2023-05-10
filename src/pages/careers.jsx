@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar , Footer } from '../components'
 import styles from  '../styles/career.module.scss'
+import { Link } from 'react-router-dom'
 
 const Careers = () => {
   return (
@@ -57,7 +58,7 @@ const Careers = () => {
                                         </span>
                                       
                                         <div className={`${styles.positionTt} my-3 flex items-center justify-between`}>
-                                            <Link to='/position'>
+                                            <Link to='/careers/position'>
                                                 <h3 className={`${styles.positionTitle}`}>
                                                     Senior Software Engineer
                                                 </h3>
@@ -82,9 +83,9 @@ const Careers = () => {
                                         </span>
                                       
                                         <div className={`${styles.positionTt} my-3 flex items-center justify-between`}>
-                                            <Link to='/position'>
+                                            <Link to='/careers/position'>
                                                 <h3 className={`${styles.positionTitle}`}>
-                                                   DevOps Engineer
+                                                   DevOps
                                                 </h3>
                                             </Link>
                                             <button className="bg-blue-500 hover:bg-blue-700 text-sfteal font-bold py-2 px-4 rounded">
