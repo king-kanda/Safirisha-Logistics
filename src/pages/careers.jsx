@@ -57,7 +57,7 @@ const Careers = () => {
                                         </span>
                                       
                                         <div className={`${styles.positionTt} my-3 flex items-center justify-between`}>
-                                            <Link to='/careers/position'>
+                                            <Link to='/position'>
                                                 <h3 className={`${styles.positionTitle}`}>
                                                     Senior Software Engineer
                                                 </h3>
@@ -82,7 +82,7 @@ const Careers = () => {
                                         </span>
                                       
                                         <div className={`${styles.positionTt} my-3 flex items-center justify-between`}>
-                                            <Link to='/careers/position'>
+                                            <Link to='/position'>
                                                 <h3 className={`${styles.positionTitle}`}>
                                                    DevOps Engineer
                                                 </h3>
