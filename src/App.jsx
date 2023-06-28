@@ -1,7 +1,7 @@
 import React from 'react'
-import { Router , Route, Routes  } from 'react-router-dom'
+import { Route, Routes  } from 'react-router-dom'
 import { Home , About , Contact , Careers , Tracking , Notfound , Services , Position } from './pages'
-import NotFound from './pages/404'
+
 
 
 const App = () => {
