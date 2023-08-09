@@ -14,7 +14,7 @@ const Home = () => {
       
       <main>
         <div  className='hero-container  '>
-        <Navbar textColor="white" btnStyles='bg-sfblue p-4 text-white'/> 
+        <Navbar textColor="text-white" btnStyles='bg-sfblue p-4 text-white' loginColor="text-white " /> 
 
           <div className='Hero-cont container'>
               <div className="hc-main">

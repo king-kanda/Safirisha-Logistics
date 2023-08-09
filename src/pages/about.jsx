@@ -4,6 +4,7 @@ import { p1, p2 , Western , Deliveroo , DHL ,Fedex ,Star} from '../assets'
 import { Ocean ,Train , AirT , Land } from '../assets';
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { BsArrowLeftCircleFill ,BsArrowRightCircleFill ,BsArrowRightCircle} from 'react-icons/bs';
+
 import '../styles/about.scss'
 
 const About = () => {
@@ -25,12 +26,12 @@ const About = () => {
             
 
             <main>
-            <Navbar  color="bg-white" textColor="orange" btnStyles='bg-orange p-4 text-white'/>
+            <Navbar  color="bg-white" textColor="text-sfteal" btnStyles='bg-orange p-4 text-white' loginColor="text-sfblue"/>
             <div className='hero-container  '>
                 <div className='Hero-cont container'>
                     <div className="hc-main">
                     
-                        <div className="hero-te xt hero-about font-bold ">
+                        <div className="hero-text hero-about font-bold ">
                             <span className='abt '> Building a Better future</span>
                             <h1> We carry the world <br></br> to your door step </h1>
                             {/* <p className='text-bold text-5xl'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> */}
