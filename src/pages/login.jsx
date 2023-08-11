@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../styles/auth.module.scss'
+import {FcGoogle } from 'react-icons/fc'
 
 const login = () => {
   return (
@@ -11,7 +12,7 @@ const login = () => {
                 <div className={` ${styles.empty} `}>
                    
                 </div>
-                <div className={` form-sec p-20`}>
+                <div className={` form-sec p-16`}>
                     {/* form section */}
                      <div className={` ${styles.welcome}`}>
                         <h2 className='text-center'>
@@ -31,7 +32,7 @@ const login = () => {
                                 <label htmlFor="password" class="block mb-2 text-sm font-medium">Password :</label>
                                 <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-midblack text-black sm:text-sm rounded-lg focus:ring-grey focus:border-grey block w-full p-2.5" required=""/>
                             </div>
-                            <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-between mb-4">
                                 <div class="flex items-start">
                                     <div class="flex items-center h-5">
                                         <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-grey rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required=""/>
@@ -42,9 +43,18 @@ const login = () => {
                                 </div>
                                 <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
                             </div>
-                            <button type="submit" class="w-full text-white bg-sfblue hover:bg-orange focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-sm px-5 py-2.5 text-center ">Sign in</button>
-                            <button type="submit" class="w-full text-white bg-orange hover:bg-sfteal focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-sm px-5 py-2.5 text-center ">
-                                Sign in With Google
+                           <div>
+                            <Link to="/dashboard" className='my-5'>
+                                <button type="submit" class="w-full text-white bg-sfblue hover:bg-orange focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-sm px-5 py-2.5 text-center ">Sign in</button>
+                                </Link>
+                           </div>
+                            <button type="submit" class="inline-flex items-center justify-center w-full text-white bg-black hover:bg-sfteal focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-sm px-5 py-2.5 text-center ">
+                                <span className='text-2xl px-4'>
+                                <FcGoogle/>
+                                </span>
+                                <p>
+                                    Sign in With Google
+                                </p>
                                 
                             </button>
                             

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes  } from 'react-router-dom'
 import { Home , About , Contact , Careers , Tracking , Notfound , Services , Position, Login } from './pages'
+import { Dashboard } from './routes'
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
         {/* <Route path="/careers/position/:id" element={<Position/>} ></Route> */}
         <Route path="/login" element={<Login/>} ></Route>
         <Route path="*" element={<Notfound/>} ></Route>
+        <Route path="/dashboard" element={<Dashboard/>} ></Route>
       </Routes>
     </>
 
